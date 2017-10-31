@@ -13,7 +13,8 @@ def get_open_issues_amount(repo_owner, repo_name):
 
 def print_repository_info(repositories):
     for repo_info in repositories:
-        print(repo_info)
+        for key, value in repo_info.items():
+            print(key, value)
 
 
 def get_repository_detail_info(repositories):

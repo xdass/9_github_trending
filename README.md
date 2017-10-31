@@ -11,13 +11,12 @@ $ pip install -r requirements.txt
 # How to use script
 ```bash
 $ python github_trending.py
-Название: deepo
-Ссылка: https://github.com/ufoym/deepo
-Issues: 5
-
-Название: progressive_growing_of_gans
-Ссылка: https://github.com/tkarras/progressive_growing_of_gans
-Issues: 2
+Ссылка:  https://github.com/Alimei/hangzhouYunQi2017ppt
+Название hangzhouYunQi2017ppt
+Issues:  5
+Ссылка:  https://github.com/ufoym/deepo
+Название deepo
+Issues:  7
 .....
 ```
 
