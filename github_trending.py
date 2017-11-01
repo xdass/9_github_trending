@@ -45,5 +45,5 @@ def get_top_repositories(top_size=20):
 
 if __name__ == '__main__':
     repositories_top_list = get_top_repositories()
-    repositories_detail_info = get_repository_detail_info(repositories_top_list)
+    repositories_detail_info = get_repositories_detail_info(repositories_top_list)
     print_repositories_info(repositories_detail_info)
