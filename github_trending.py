@@ -11,14 +11,14 @@ def get_open_issues_amount(repo_owner, repo_name):
     return len([issue for issue in all_issues if issue['state'] == 'open'])
 
 
-def print_repository_info(repositories):
+def print_repositories_info(repositories):
     for repo_info in repositories:
         print('Название: {}'.format(repo_info['name']))
         print('Ссылка: {}'.format(repo_info['url']))
         print('Issues: {}'.format(repo_info['issues']))
 
 
-def get_repository_detail_info(repositories):
+def get_repositories_detail_info(repositories):
     detail_info = []
     for repo in repositories:
         issues = get_open_issues_amount(repo['owner']['login'], repo['name'])
@@ -46,5 +46,5 @@ def get_top_repositories(top_size=20):
 
 if __name__ == '__main__':
     repositories_top_list = get_top_repositories()
-    repositories_detail_info = get_repository_detail_info(repositories_top_list)
-    print_repository_info(repositories_detail_info)
+    repositories_detail_info = get_repositories_detail_info(repositories_top_list)
+    print_repositories_info(repositories_detail_info)
