@@ -13,8 +13,9 @@ def get_open_issues_amount(repo_owner, repo_name):
 
 def print_repository_info(repositories):
     for repo_info in repositories:
-        for key, value in repo_info.items():
-            print(key, value)
+        print('Название: {}'.format(repo_info['name']))
+        print('Ссылка: {}'.format(repo_info['url']))
+        print('Issues: {}'.format(repo_info['issues']))
 
 
 def get_repository_detail_info(repositories):
@@ -23,9 +24,9 @@ def get_repository_detail_info(repositories):
         issues = get_open_issues_amount(repo['owner']['login'], repo['name'])
         detail_info.append(
             {
-                'Название': repo['name'],
-                'Ссылка: ': repo['html_url'],
-                'Issues: ': issues
+                'name': repo['name'],
+                'url': repo['html_url'],
+                'issues': issues
             })
     return detail_info
 
